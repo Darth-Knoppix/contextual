@@ -1,0 +1,52 @@
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #37474f;
+  background-image: url(./curls.png);
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.cart-summary-items {
+  list-style: none;
+  padding-left: 0;
+  list-style-type: none;
+  padding: 1em;
+  box-sizing: border-box;
+  display: block;
+  overflow: hidden;
+  min-height: 70px;
+}
+
+.cart-item {
+  margin-right: 1em;
+  float: left;
+}
+
+.category-section {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto;
+}
+
+.product-container {
+  background-color: #efefef;
+  border-radius: 0.5rem;
+  margin: 1rem;
+  padding: 1em;
+  box-shadow: 0px 8px 24px -8px #666;
+}
