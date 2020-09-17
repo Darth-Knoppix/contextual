@@ -10,8 +10,8 @@ const Inventory = [
     products: [
       { id: 1, title: "Apple" },
       { id: 2, title: "Orange" },
-      { id: 3, title: "Pear" }
-    ]
+      { id: 3, title: "Pear" },
+    ],
   },
   {
     title: "Vege",
@@ -19,20 +19,20 @@ const Inventory = [
       { id: 4, title: "Capsicum" },
       { id: 5, title: "Carrot" },
       { id: 6, title: "Mushroom" },
-      { id: 7, title: "Potato" }
-    ]
-  }
+      { id: 7, title: "Potato" },
+    ],
+  },
 ];
 
 class App extends Component {
   state = {
-    items: []
+    items: [],
   };
 
   onAddToCart = this.onAddToCart.bind(this);
   onAddToCart(p) {
     this.setState({
-      items: [...this.state.items, p]
+      items: [...this.state.items, p],
     });
   }
 
@@ -42,7 +42,7 @@ class App extends Component {
     newArray.splice(i, 1);
 
     this.setState({
-      items: newArray
+      items: newArray,
     });
   }
 
@@ -52,7 +52,7 @@ class App extends Component {
         value={{
           items: this.state.items,
           onAddToCart: this.onAddToCart,
-          onRemoveFromCart: this.onRemoveFromCart
+          onRemoveFromCart: this.onRemoveFromCart,
         }}
       >
         <div className="App">

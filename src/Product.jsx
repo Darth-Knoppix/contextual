@@ -2,16 +2,19 @@ import React from "react";
 import logo from "./logo.svg";
 import { CartContext } from "./CartContext";
 
-export default props => (
+export default (props) => (
   <CartContext.Consumer>
-    {cart => (
+    {(cart) => (
       <div className="card" style={{ margin: "1em" }}>
         <div className="card-image cyan lighten-5">
           <img src={logo} />
         </div>
         <div className="card-content">
-          <span className="new badge indigo lighten-2" data-badge-caption="in cart">
-            {cart.items.filter(p => p.id === props.id).length || 'none'}
+          <span
+            className="new badge indigo lighten-2"
+            data-badge-caption="in cart"
+          >
+            {cart.items.filter((p) => p.id === props.id).length || "none"}
           </span>
           <h4 className="card-title">{props.title}</h4>
 
